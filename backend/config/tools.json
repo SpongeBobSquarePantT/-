@@ -1,0 +1,672 @@
+{
+  "categories": [
+    {
+      "id": "java",
+      "name": "Java",
+      "icon": "☕"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "icon": "🐍"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "icon": "🟢"
+    },
+    {
+      "id": "db",
+      "name": "数据库",
+      "icon": "🗄️"
+    },
+    {
+      "id": "ide",
+      "name": "IDE / 编辑器",
+      "icon": "💻"
+    },
+    {
+      "id": "tool",
+      "name": "常用工具",
+      "icon": "🔧"
+    }
+  ],
+  "tools": [
+    {
+      "id": "jdk8",
+      "name": "OpenJDK 8 (Temurin)",
+      "category": "java",
+      "description": "Java 8 LTS 运行时与编译工具链",
+      "windows": {
+        "type": "winget",
+        "package": "EclipseAdoptium.Temurin.8.JDK",
+        "check": "java -version 2>&1 | findstr /R \"1\\.8\"",
+        "paths": [
+          "%ProgramFiles%\\Java\\jdk1.8*\\bin\\java.exe",
+          "%ProgramFiles%\\Eclipse Adoptium\\jdk-8*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\*\\jdk1.8*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\corretto-8*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\temurin-8*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\ms-8*\\bin\\java.exe"
+        ],
+        "registry": [
+          "Temurin 8",
+          "AdoptOpenJDK 8",
+          "OpenJDK 8"
+        ],
+        "java_version": "8",
+        "executables": []
+      },
+      "linux": {
+        "apt": "openjdk-8-jdk",
+        "dnf": "java-1.8.0-openjdk-devel",
+        "pacman": "jdk8-openjdk",
+        "check": "java -version 2>&1 | grep -E '1\\.8'"
+      }
+    },
+    {
+      "id": "jdk11",
+      "name": "OpenJDK 11 (Temurin)",
+      "category": "java",
+      "description": "Java 11 LTS 运行时与编译工具链",
+      "windows": {
+        "type": "winget",
+        "package": "EclipseAdoptium.Temurin.11.JDK",
+        "check": "java -version 2>&1 | findstr /R \"11\\.0\"",
+        "paths": [
+          "%ProgramFiles%\\Java\\jdk-11*\\bin\\java.exe",
+          "%ProgramFiles%\\Eclipse Adoptium\\jdk-11*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\*\\jdk-11*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\corretto-11*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\temurin-11*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\ms-11*\\bin\\java.exe"
+        ],
+        "registry": [
+          "Temurin 11",
+          "AdoptOpenJDK 11",
+          "OpenJDK 11"
+        ],
+        "java_version": "11",
+        "executables": []
+      },
+      "linux": {
+        "apt": "openjdk-11-jdk",
+        "dnf": "java-11-openjdk-devel",
+        "pacman": "jdk11-openjdk",
+        "check": "java -version 2>&1 | grep -E '11\\.0'"
+      }
+    },
+    {
+      "id": "jdk17",
+      "name": "OpenJDK 17 (Temurin)",
+      "category": "java",
+      "description": "Java 17 LTS 运行时与编译工具链",
+      "windows": {
+        "type": "winget",
+        "package": "EclipseAdoptium.Temurin.17.JDK",
+        "check": "java -version 2>&1 | findstr /R \"17\\.0\"",
+        "paths": [
+          "%ProgramFiles%\\Java\\jdk-17*\\bin\\java.exe",
+          "%ProgramFiles%\\Eclipse Adoptium\\jdk-17*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\*\\jdk-17*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\corretto-17*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\temurin-17*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\ms-17*\\bin\\java.exe"
+        ],
+        "registry": [
+          "Temurin 17",
+          "AdoptOpenJDK 17",
+          "OpenJDK 17"
+        ],
+        "java_version": "17",
+        "executables": []
+      },
+      "linux": {
+        "apt": "openjdk-17-jdk",
+        "dnf": "java-17-openjdk-devel",
+        "pacman": "jdk17-openjdk",
+        "check": "java -version 2>&1 | grep -E '17\\.0'"
+      }
+    },
+    {
+      "id": "jdk21",
+      "name": "OpenJDK 21 (Temurin)",
+      "category": "java",
+      "description": "Java 21 LTS 运行时与编译工具链",
+      "windows": {
+        "type": "winget",
+        "package": "EclipseAdoptium.Temurin.21.JDK",
+        "check": "java -version 2>&1 | findstr /R \"21\\.0\"",
+        "paths": [
+          "%ProgramFiles%\\Java\\jdk-21*\\bin\\java.exe",
+          "%ProgramFiles%\\Eclipse Adoptium\\jdk-21*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\*\\jdk-21*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\corretto-21*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\temurin-21*\\bin\\java.exe",
+          "%USERPROFILE%\\.jdks\\ms-21*\\bin\\java.exe"
+        ],
+        "registry": [
+          "Temurin 21",
+          "AdoptOpenJDK 21",
+          "OpenJDK 21"
+        ],
+        "java_version": "21",
+        "executables": []
+      },
+      "linux": {
+        "apt": "openjdk-21-jdk",
+        "dnf": "java-21-openjdk-devel",
+        "pacman": "jdk21-openjdk",
+        "check": "java -version 2>&1 | grep -E '21\\.0'"
+      }
+    },
+    {
+      "id": "maven",
+      "name": "Apache Maven",
+      "category": "java",
+      "description": "Java 项目构建与依赖管理工具",
+      "windows": {
+        "type": "winget",
+        "package": "Apache.Maven",
+        "check": "mvn -version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\apache-maven-*\\bin\\mvn.cmd",
+          "%ProgramFiles%\\Maven\\apache-maven-*\\bin\\mvn.cmd"
+        ],
+        "registry": [
+          "Apache Maven",
+          "Maven"
+        ],
+        "executables": [
+          "mvn"
+        ]
+      },
+      "linux": {
+        "apt": "maven",
+        "dnf": "maven",
+        "pacman": "maven",
+        "check": "mvn -version 2>&1"
+      }
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "category": "java",
+      "description": "现代 Java 构建工具，支持增量构建",
+      "windows": {
+        "type": "winget",
+        "package": "Gradle.Gradle",
+        "check": "gradle -version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Gradle\\gradle-*\\bin\\gradle.bat",
+          "%USERPROFILE%\\.gradle\\gradle-*\\bin\\gradle.bat"
+        ],
+        "registry": [
+          "Gradle"
+        ],
+        "executables": [
+          "gradle"
+        ]
+      },
+      "linux": {
+        "apt": "gradle",
+        "dnf": "gradle",
+        "pacman": "gradle",
+        "check": "gradle -version 2>&1"
+      }
+    },
+    {
+      "id": "python3",
+      "name": "Python 3",
+      "category": "python",
+      "description": "Python 解释器（Windows 为 3.12）",
+      "windows": {
+        "type": "winget",
+        "package": "Python.Python.3.12",
+        "check": "python --version 2>&1",
+        "paths": [
+          "%LOCALAPPDATA%\\Programs\\Python\\Python3*\\python.exe",
+          "%ProgramFiles%\\Python3*\\python.exe"
+        ],
+        "registry": [
+          "Python 3."
+        ],
+        "executables": [
+          "python",
+          "python3"
+        ]
+      },
+      "linux": {
+        "apt": "python3",
+        "dnf": "python3",
+        "pacman": "python",
+        "check": "python3 --version 2>&1"
+      }
+    },
+    {
+      "id": "pipx",
+      "name": "pipx",
+      "category": "python",
+      "description": "在隔离环境中运行 Python 应用",
+      "windows": {
+        "type": "winget",
+        "package": "pypi.pipx",
+        "check": "pipx --version 2>&1",
+        "paths": [
+          "%USERPROFILE%\\.local\\bin\\pipx.exe"
+        ],
+        "registry": [
+          "pipx"
+        ],
+        "executables": [
+          "pipx"
+        ]
+      },
+      "linux": {
+        "apt": "pipx",
+        "dnf": "pipx",
+        "pacman": "python-pipx",
+        "check": "pipx --version 2>&1"
+      }
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "category": "python",
+      "description": "Python 依赖管理与打包工具",
+      "windows": {
+        "type": "winget",
+        "package": "PythonPoetry.Poetry",
+        "check": "poetry --version 2>&1",
+        "paths": [
+          "%APPDATA%\\Python\\Scripts\\poetry.exe",
+          "%USERPROFILE%\\.local\\bin\\poetry.exe"
+        ],
+        "registry": [
+          "Poetry"
+        ],
+        "executables": [
+          "poetry"
+        ]
+      },
+      "linux": {
+        "apt": "python3-poetry",
+        "dnf": "python3-poetry",
+        "pacman": "python-poetry",
+        "check": "poetry --version 2>&1"
+      }
+    },
+    {
+      "id": "node-lts",
+      "name": "Node.js LTS",
+      "category": "node",
+      "description": "JavaScript 运行时（LTS 版本）",
+      "windows": {
+        "type": "winget",
+        "package": "OpenJS.NodeJS.LTS",
+        "check": "node -v 2>&1",
+        "paths": [
+          "%ProgramFiles%\\nodejs\\node.exe",
+          "%LOCALAPPDATA%\\Programs\\nodejs\\node.exe"
+        ],
+        "registry": [
+          "Node.js",
+          "NodeJS"
+        ],
+        "executables": [
+          "node"
+        ]
+      },
+      "linux": {
+        "apt": "nodejs",
+        "dnf": "nodejs",
+        "pacman": "nodejs",
+        "check": "node -v 2>&1"
+      }
+    },
+    {
+      "id": "yarn",
+      "name": "Yarn",
+      "category": "node",
+      "description": "JavaScript 包管理器",
+      "windows": {
+        "type": "winget",
+        "package": "Yarn.Yarn",
+        "check": "yarn --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Yarn\\bin\\yarn.cmd",
+          "%LOCALAPPDATA%\\Yarn\\bin\\yarn.cmd"
+        ],
+        "registry": [
+          "Yarn"
+        ],
+        "executables": [
+          "yarn"
+        ]
+      },
+      "linux": {
+        "apt": "yarn",
+        "dnf": "yarn",
+        "pacman": "yarn",
+        "check": "yarn --version 2>&1"
+      }
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL 8",
+      "category": "db",
+      "description": "关系型数据库（Windows 安装版）",
+      "windows": {
+        "type": "winget",
+        "package": "Oracle.MySQL",
+        "check": "mysql --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe"
+        ],
+        "registry": [
+          "MySQL Server"
+        ],
+        "executables": [
+          "mysql"
+        ]
+      },
+      "linux": {
+        "apt": "mysql-server",
+        "dnf": "mysql-server",
+        "pacman": "mariadb",
+        "check": "mysql --version 2>&1"
+      }
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "category": "db",
+      "description": "功能强大的开源关系型数据库",
+      "windows": {
+        "type": "winget",
+        "package": "PostgreSQL.PostgreSQL.16",
+        "check": "psql --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\PostgreSQL\\*\\bin\\psql.exe"
+        ],
+        "registry": [
+          "PostgreSQL"
+        ],
+        "executables": [
+          "psql"
+        ]
+      },
+      "linux": {
+        "apt": "postgresql",
+        "dnf": "postgresql-server",
+        "pacman": "postgresql",
+        "check": "psql --version 2>&1"
+      }
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "category": "db",
+      "description": "高性能内存键值数据库",
+      "windows": {
+        "type": "winget",
+        "package": "Memurai.Memurai",
+        "check": "redis-cli --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Memurai\\memurai.exe",
+          "%ProgramFiles%\\Redis\\redis-server.exe"
+        ],
+        "registry": [
+          "Redis",
+          "Memurai"
+        ],
+        "executables": [
+          "redis-cli",
+          "redis-server",
+          "memurai-cli"
+        ]
+      },
+      "linux": {
+        "apt": "redis-server",
+        "dnf": "redis",
+        "pacman": "redis",
+        "check": "redis-cli --version 2>&1"
+      }
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "category": "db",
+      "description": "轻量级嵌入式数据库",
+      "windows": {
+        "type": "winget",
+        "package": "SQLite.SQLite",
+        "check": "sqlite3 --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\SQLite\\sqlite3.exe",
+          "%LOCALAPPDATA%\\Programs\\SQLite\\sqlite3.exe"
+        ],
+        "registry": [
+          "SQLite"
+        ],
+        "executables": [
+          "sqlite3"
+        ]
+      },
+      "linux": {
+        "apt": "sqlite3",
+        "dnf": "sqlite",
+        "pacman": "sqlite",
+        "check": "sqlite3 --version 2>&1"
+      }
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "category": "ide",
+      "description": "微软出品的轻量级代码编辑器",
+      "windows": {
+        "type": "winget",
+        "package": "Microsoft.VisualStudioCode",
+        "check": "code --version 2>&1",
+        "paths": [
+          "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe",
+          "%ProgramFiles%\\Microsoft VS Code\\Code.exe"
+        ],
+        "registry": [
+          "Visual Studio Code"
+        ],
+        "executables": [
+          "code"
+        ]
+      },
+      "linux": {
+        "apt": "code",
+        "dnf": "code",
+        "pacman": "code",
+        "check": "code --version 2>&1"
+      }
+    },
+    {
+      "id": "intellij",
+      "name": "IntelliJ IDEA",
+      "category": "ide",
+      "description": "JetBrains 出品的 Java IDE（社区版 / 专业版）",
+      "windows": {
+        "type": "winget",
+        "package": "JetBrains.IntelliJIDEA.Community",
+        "check": "idea64.exe --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\JetBrains\\IntelliJ IDEA Community Edition*\\bin\\idea64.exe",
+          "%LOCALAPPDATA%\\Programs\\IntelliJ IDEA Community Edition*\\bin\\idea64.exe",
+          "E:\\software\\IntelliJ IDEA*\\bin\\idea64.exe",
+          "E:\\IntelliJ IDEA*\\bin\\idea64.exe"
+        ],
+        "registry": [
+          "IntelliJ IDEA"
+        ],
+        "executables": []
+      },
+      "linux": {
+        "snap": "intellij-idea-community",
+        "check": "idea.sh --version 2>&1"
+      }
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "category": "ide",
+      "description": "JetBrains 出品的 Python IDE（社区版 / 专业版）",
+      "windows": {
+        "type": "winget",
+        "package": "JetBrains.PyCharm.Community",
+        "check": "pycharm64.exe --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\JetBrains\\PyCharm Community Edition*\\bin\\pycharm64.exe",
+          "%LOCALAPPDATA%\\Programs\\PyCharm Community Edition*\\bin\\pycharm64.exe",
+          "E:\\software\\PyCharm*\\bin\\pycharm64.exe",
+          "E:\\PyCharm*\\bin\\pycharm64.exe"
+        ],
+        "registry": [
+          "PyCharm"
+        ],
+        "executables": []
+      },
+      "linux": {
+        "snap": "pycharm-community",
+        "check": "pycharm-community --version 2>&1"
+      }
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "tool",
+      "description": "分布式版本控制系统",
+      "windows": {
+        "type": "winget",
+        "package": "Git.Git",
+        "check": "git --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Git\\cmd\\git.exe"
+        ],
+        "registry": [
+          "Git"
+        ],
+        "executables": [
+          "git"
+        ]
+      },
+      "linux": {
+        "apt": "git",
+        "dnf": "git",
+        "pacman": "git",
+        "check": "git --version 2>&1"
+      }
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "tool",
+      "description": "容器化开发与部署平台",
+      "windows": {
+        "type": "winget",
+        "package": "Docker.DockerDesktop",
+        "check": "docker --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Docker\\Docker\\Docker Desktop.exe"
+        ],
+        "registry": [
+          "Docker"
+        ],
+        "executables": [
+          "docker"
+        ]
+      },
+      "linux": {
+        "apt": "docker.io",
+        "dnf": "docker",
+        "pacman": "docker",
+        "check": "docker --version 2>&1"
+      }
+    },
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "category": "tool",
+      "description": "浏览器（开发调试用）",
+      "windows": {
+        "type": "winget",
+        "package": "Google.Chrome",
+        "check": "chrome.exe --version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Google\\Chrome\\Application\\chrome.exe",
+          "%LOCALAPPDATA%\\Google\\Chrome\\Application\\chrome.exe"
+        ],
+        "registry": [
+          "Google Chrome"
+        ],
+        "executables": []
+      },
+      "linux": {
+        "snap": "chromium",
+        "check": "chromium --version 2>&1"
+      }
+    },
+    {
+      "id": "bandizip",
+      "name": "Bandizip",
+      "category": "tool",
+      "description": "免费高效的压缩解压工具（支持多种格式）",
+      "windows": {
+        "type": "winget",
+        "package": "Bandisoft.Bandizip",
+        "check": "Bandizip.exe /version 2>&1",
+        "paths": [
+          "%ProgramFiles%\\Bandizip\\Bandizip.exe",
+          "%LOCALAPPDATA%\\Programs\\Bandizip\\Bandizip.exe",
+          "D:\\soft\\Bandizip\\Bandizip.exe",
+          "E:\\software\\Bandizip\\Bandizip.exe"
+        ],
+        "registry": [
+          "Bandizip"
+        ],
+        "executables": [
+          "Bandizip",
+          "Bandizip.exe"
+        ]
+      },
+      "linux": {
+        "apt": "p7zip-full",
+        "dnf": "p7zip",
+        "pacman": "p7zip",
+        "check": "7z 2>&1"
+      }
+    },
+    {
+      "id": "curl",
+      "name": "curl",
+      "category": "tool",
+      "description": "命令行 HTTP 请求工具",
+      "windows": {
+        "type": "winget",
+        "package": "cURL.cURL",
+        "check": "curl --version 2>&1",
+        "paths": [
+          "%SystemRoot%\\System32\\curl.exe"
+        ],
+        "registry": [
+          "curl"
+        ],
+        "executables": [
+          "curl"
+        ]
+      },
+      "linux": {
+        "apt": "curl",
+        "dnf": "curl",
+        "pacman": "curl",
+        "check": "curl --version 2>&1"
+      }
+    }
+  ]
+}

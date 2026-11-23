@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBox · 开发环境安装器</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">▣</div>
+        <div class="brand-text">
+          <h1>DevBox</h1>
+          <p>开发环境安装器</p>
+        </div>
+      </div>
+      
+      <nav id="category-nav" class="category-nav"></nav>
+
+      <div class="platform-info" id="platform-info"></div>
+    </aside>
+
+    <main class="main">
+      <!-- 预设工具视图 -->
+      <section id="preset-view" class="view">
+        <header class="toolbar">
+          <h2 id="category-title">全部工具</h2>
+          <div class="toolbar-actions">
+            <button id="select-all" class="btn btn-ghost">全选</button>
+            <button id="clear-all" class="btn btn-ghost">清空</button>
+          </div>
+        </header>
+        <div id="tool-list" class="tool-list"></div>
+      </section>
+
+      <!-- 搜索安装视图 -->
+      <section id="search-view" class="view hidden">
+        <header class="toolbar">
+          <h2>搜索安装</h2>
+          <div class="search-box">
+            <input id="search-input" type="text" placeholder="输入软件名称，如 jdk、git、redis..." />
+            <button id="search-btn" class="btn btn-primary">搜索</button>
+          </div>
+        </header>
+        <div id="search-results" class="search-results">
+          <div class="empty">输入关键词搜索可安装的软件包</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span id="selected-count">已选 0 项</span>
+      <span id="task-status" class="task-status"></span>
+    </div>
+    <button id="install-btn" class="btn btn-primary" disabled>安装选中 (0)</button>
+  </footer>
+
+  <div id="log-panel" class="log-panel hidden">
+    <div class="log-header">
+      <span class="log-title">安装日志</span>
+      <div class="log-actions">
+        <button id="cancel-task" class="btn btn-ghost hidden">取消任务</button>
+        <button id="close-log" class="btn btn-ghost">关闭</button>
+      </div>
+    </div>
+    <div id="log-body" class="log-body"></div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
